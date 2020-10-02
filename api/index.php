@@ -42,7 +42,7 @@ if(!empty($data->name)){
     
         // tell the user no products found
         echo json_encode(
-            array("message" => "No products found.")
+            array("message" => "No products found.Please Contact Administrators")
         );
     }
     $db->disconnect($conn);
