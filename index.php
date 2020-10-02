@@ -1,7 +1,7 @@
 <?php
 $method=$_SERVER['REQUEST_METHOD'];
 if($method=="POST"){
-    $requestBody=file_get_contents('php://input');
+    $requestBody=file_get_contents('php://input//127.0.0.1');
     $json=json_decode($requestBody);
     $text=$json-> result->parameters->text;
     switch ($text) {
